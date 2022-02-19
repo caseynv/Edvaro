@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300&display=swap');
+body{
+  background-color: #232323;
+}
+
+.header{
+  justify-content: space-between;
+  background-color: black;
+  height: 84px;
+}
+
+.logo{
+  padding-left: 20px;
+}
+
+.header--left{
+  height: 40px;
+  align-self: center;
+}
+
+.header--right{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.header--para{
+  color: white;
+}
+
+.img--user{
+  height: 44px;
+}
+
+.navigation{
+  background-color: #232323;
+  color: white;
+  justify-content: space-between;
+  height: 50px;
+}
+
+.navigation--left{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navigation--right{
+  display: flex;
+  align-items: center;
+}
+
+.nav--right--text{
+  margin: auto;
+}
+
+.body{
+  background-color: #232323;
+  height: fit-content;
+}
+
+.body-box{
+  width: 98vw;
+  height: 35vh !important;
+  padding: 20px;
+  margin: auto;
+  margin-bottom: 20px;
+  background-color: #171717;
+  color: white;
+  height: 198px;
+  border-radius: 10px;
+}
+
+.body-box-img{
+  width: 25vw;
+}
+
+.body-box-2{
+  font-family: Inter;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 22px;
+
+}
+.body-box-3{
+  display: flex;
+  justify-content: space-between;
+}
+
+.body-box-3 p{
+  font-family: Inter;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 15px;
+}
+
+@media (mx-wi) {
+  
+}
+
+
+
+
+
+
+
+
+
+
+
