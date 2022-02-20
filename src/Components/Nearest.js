@@ -1,17 +1,92 @@
 import React from 'react';
-import Profile from '../mapUrl.png';
 
+const userDetail = 
+{
+    "station_code": 40,
+    "name": "Dhruv Singh",
+    "profile_key": "url"
+};
 
-function Nearest(props) {
-    let useful = props.areas;
-    let useit = props.user.station_code;
-    for(let j = 0; j < useful.length; j++){
-        useful[j].station_path.forEach(tim, i) 
+const rideDetails = 
+[
+    {
+       "id":1,
+       "origin_station_code":23,
+       "station_path":[
+          23,
+          42,
+          45,
+          48,
+          56,
+          60,
+          77,
+          81,
+          93
+       ],
+       "destination_station_code":93,
+       "date":1644924365,
+       "map_url":"url",
+       "state":"Maharashtra",
+       "city":"Panvel"
+    },
+    {
+       "id":2,
+       "origin_station_code":20,
+       "station_path":[
+          20,
+          39,
+          40,
+          42,
+          54,
+          63,
+          72,
+          88,
+          98
+       ],
+       "destination_station_code":98,
+       "date":1644924365,
+       "map_url":"url",
+       "state":"Maharashtra",
+       "city":"Panvel"
+    },
+    {
+       "id":3,
+       "origin_station_code":13,
+       "station_path":[
+          13,
+          25,
+          41,
+          48,
+          59,
+          64,
+          75,
+          81,
+          91
+       ],
+       "destination_station_code":91,
+       "date":1644924365,
+       "map_url":"url",
+       "state":"Maharashtra",
+       "city":"Panvel"
+    }
+];
+
+const Nearest = () => {
+    for(let j = 0; j < loadUser.length; j++){
+        let crm = loadUser[j];
+        console.log(crm)
+    }
+        /*crm.forEach(tim) 
+        
     };
-    function tim(x, i){
-        if(x >= useit && x <= 42){
-        console.log(x, i)};
-    }   
+    function tim(x, j){
+        
+        if ((x >= useit && x <= 42) !== -1){
+            console.log(crm)
+        }
+        
+    };
+     */
     
       
     return (

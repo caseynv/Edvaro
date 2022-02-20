@@ -1,6 +1,7 @@
 import React from 'react';
 import {Icon} from '@iconify/react';
 import Dropdown from 'react-bootstrap/Dropdown';
+import { Link } from "react-router-dom";
 
 
 function Navigation() {
@@ -8,7 +9,8 @@ function Navigation() {
         <div className='row navigation g-0'>
             <div className='navigation--left col-6'>
                 <div className='navigation--body--1'>
-                    Nearest rides
+                    <Link className="items-merch" to="/Nearest" target="_blank"> Nearest rides</Link>
+
                 </div>
                 <div className='navigation--body--2'>
                     Upcoming rides

@@ -1,20 +1,17 @@
 import React from 'react';
 
 import './App.css';
-import Header from './Body.js/Header';
-import Navigation from './Body.js/Navigation';
-import Body from './Body.js/Body';
-
-
+import Part from '../Components/Part';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
-  return (
-    <> 
-      <Header />
-      <Navigation />
-      <Body />
-    </>
+  return ( 
+    <BrowserRouter>
+      <Routes>
+        <Route path='/' element={<Part />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
