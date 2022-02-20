@@ -37,7 +37,7 @@ body{
   background-color: #232323;
   color: white;
   justify-content: space-between;
-  height: 50px;
+  height: 80px;
 }
 
 .navigation--left{
@@ -55,9 +55,36 @@ body{
   margin: auto;
 }
 
+.dropdown-toggle::after {
+  display: none;
+}
+
+.filter--button{
+  background-color: #232323;
+  color: white !important;
+  border: #232323;
+}
+
+.filter--button:hover{
+  background-color: #232323;
+}
+
+.filter--button:focus{
+  outline: 0 !important;
+}
+
+.filter--button:active{
+  background-color: #232323;
+  outline: 0;
+}
+.dropdown--bg{
+  color: white;
+  background-color: #232323;
+}
+
 .body{
   background-color: #232323;
-  height: fit-content;
+  height: auto;
 }
 
 .body-box{
