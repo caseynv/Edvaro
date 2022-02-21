@@ -55,6 +55,16 @@ body{
   margin: auto;
 }
 
+.navigation--body{
+  text-decoration: none;
+  color: white;
+}
+
+.navigation--body:visited{
+  text-decoration-line: line-through;
+  font-weight: 500;
+}
+
 .dropdown-toggle::after {
   display: none;
 }
