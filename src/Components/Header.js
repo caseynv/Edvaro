@@ -2,11 +2,9 @@ import React from 'react';
 import Logo from '../Images/logoName.png';
 import Profile from '../Images/profilePic.png';
 
-
 import {Icon} from '@iconify/react';
 import Dropdown from 'react-bootstrap/Dropdown';
-import { Link } from "react-router-dom";
-
+import { Outlet, Link } from "react-router-dom";
 
 
 
@@ -55,6 +53,7 @@ function Header() {
                     </Dropdown>
                 </div>
             </div>
+            <Outlet />
         </>
     );
   }

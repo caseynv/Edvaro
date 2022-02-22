@@ -1,9 +1,11 @@
 import React from 'react';
 import Map from '../Images/mapUrl.png';
-import udata from '../Data/userDetail.json';
-import rdata from '../Data/rideDetails.json';
 
-const PastRides = (props) => {
+
+/*import udata from '../Data/userDetail.json';
+import rdata from '../Data/rideDetails.json';*/
+
+const PastRides = () => {
     /*let user = props.user; 
     let zone = props.zone;
 

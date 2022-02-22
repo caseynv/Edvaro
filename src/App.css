@@ -38,6 +38,7 @@ body{
   color: white;
   justify-content: space-between;
   height: 80px;
+  max-width: 100vw;
 }
 
 .navigation--left{

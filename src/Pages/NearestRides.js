@@ -1,28 +1,36 @@
 import React from 'react';
 import Map from '../Images/mapUrl.png';
-/*import udata from '../Data/userDetail.json';
-import rdata from '../Data/rideDetails.json';*/
+import udata from '../Data/userDetail.json';
+import rdata from '../Data/rideDetails.json';
 
 
 
 const NearestRides = () => {
-    /*let user = props.user; 
-    let zone = props.zone;
-
-    for(let j = 0; j < zone.length; j++){
-        let crm = zone[j];
-        console.log(crm)
-   
-        crm.forEach(tim) 
+    let ud = udata.station_code;
+    for(let j = 0; j < rdata.length; j++){
+        let rd = rdata[j].station_path;
         
-    };
-    function tim(x, user){
         
-        if ((x >= user && x <= 42) !== -1){
-            console.log(crm)
+        for(let i = 0; i < rd.length; i++){
+            if (rd[i] >= ud && rd[i] <= 42){
+                let newA = [];
+                if (rd[i] === 42){
+                    newA.unshift(rdata[j])
+                    
+                    console.log(newA)
+                } /*let newList = [rdata[0]];*/ 
+                
+               
+            }
+            
         }
         
-    };*/
+    };
+    
+   
+    
+        
+        
     
       
     return (

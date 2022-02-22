@@ -1,18 +1,22 @@
 import React from 'react';
-import Map from '../mapUrl.png';
+import Map from '../Images/mapUrl.png';
+import udata from '../Data/userDetail.json';
+import rdata from '../Data/rideDetails.json';
 
 
 
 
-const NearestRides = () => {
-    /*let user = props.user; 
-    let zone = props.zone;
+const UpcomingRides = () => {
+    
+    
+    for(let j = 0; j < rdata.length; j++){
+        
+        /*console.log(rdata[j].date)*/
+    }
 
-    for(let j = 0; j < zone.length; j++){
-        let crm = zone[j];
-        console.log(crm)
-   
-        crm.forEach(tim) 
+    const tdate = new Date()
+    console.log(tdate)
+      /*  crm.forEach(tim) 
         
     };
     function tim(x, user){
@@ -20,6 +24,8 @@ const NearestRides = () => {
         if ((x >= user && x <= 42) !== -1){
             console.log(crm)
         }
+        
+
         
     };*/
     
@@ -48,4 +54,4 @@ const NearestRides = () => {
   }
 
 
-export default NearestRides;
+export default UpcomingRides;
