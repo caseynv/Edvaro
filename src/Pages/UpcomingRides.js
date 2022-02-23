@@ -1,6 +1,5 @@
 import React from 'react';
 import Map from '../Images/mapUrl.png';
-import udata from '../Data/userDetail.json';
 import rdata from '../Data/rideDetails.json';
 
 
@@ -10,11 +9,13 @@ const UpcomingRides = () => {
     
     
     for(let j = 0; j < rdata.length; j++){
-        
-        /*console.log(rdata[j].date)*/
+        let date = new Date(rdata[j].date)
+        console.log(rdata[j])
+        console.log(date)
     }
 
-    const tdate = new Date()
+    const tdate = Date.now()
+    
     console.log(tdate)
       /*  crm.forEach(tim) 
         

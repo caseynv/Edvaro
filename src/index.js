@@ -8,11 +8,18 @@ import UpcomingRides from "./Pages/UpcomingRides";
 import PastRides from "./Pages/PastRides";
 
 
+
+
+
+
+
 const rootElement = document.getElementById("root");
 render(
   <BrowserRouter>
     <Routes>
       <Route path="/" element={<App />}>
+
+
         <Route path="/NearestRides" element={<NearestRides />} />
         <Route path="/UpcomingRides" element={<UpcomingRides />} />
         <Route path="/PastRides" element={<PastRides />} />
