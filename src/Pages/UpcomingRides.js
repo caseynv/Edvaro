@@ -3,35 +3,22 @@ import Map from '../Images/mapUrl.png';
 import rdata from '../Data/rideDetails.json';
 
 
-
+let nArr = []
 
 const UpcomingRides = () => {
     
     
     for(let j = 0; j < rdata.length; j++){
         let date = new Date(rdata[j].date)
-        console.log(rdata[j])
-        console.log(date)
+        let datestr = date.toString()
+        nArr.push(datestr)
+        
     }
+    console.log(nArr)
 
-    const tdate = Date.now()
-    
-    console.log(tdate)
-      /*  crm.forEach(tim) 
-        
-    };
-    function tim(x, user){
-        
-        if ((x >= user && x <= 42) !== -1){
-            console.log(crm)
-        }
-        
-
-        
-    };*/
-    
-      
     return (
+    <>    
+        {nArr.map((cont, i) => (  
         <div className='body'>
             <div className='row body-box g-0 justify-content-between'>
                 <div className='body-box-1 col-3 col-md-3'>
@@ -41,7 +28,7 @@ const UpcomingRides = () => {
                     <p>Ride Id: </p>
                     <p>Origin Station: </p>
                     <p>Station_path: </p>
-                    <p>Date: </p>
+                    <p>Date: {cont}</p>
                     <p>Distance: </p>
                 </div>
                 <div className='body-box-3 col-3 col-md-2'>
@@ -50,7 +37,9 @@ const UpcomingRides = () => {
                 </div>
             </div>
 
-        </div>
+        </div>)
+        )}  
+    </>
     );
   }
 

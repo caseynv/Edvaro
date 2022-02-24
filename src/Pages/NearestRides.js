@@ -11,7 +11,6 @@ const NearestRides = () => {
     for(let j = 0; j < rdata.length; j++){
         let rd = rdata[j].station_path;
         
-        
         for(let i = 0; i < rd.length; i++){
             if (rd[i] >= ud && rd[i] <= 42){
                 
@@ -39,9 +38,9 @@ const NearestRides = () => {
                     </div>
                     <div className='body-box-2 col-5 col-md-4'>
                         <p>Ride Id: {content.id}</p>
-                        <p>Origin Station: </p>
+                        <p>Origin Station: {content.origin_station_code}</p>
                         <p>Station_path: {content.station_path}</p>
-                        <p>Date: </p>
+                        <p>Date: {content.date}</p>
                         <p>Distance: </p>
                     </div>
                     <div className='body-box-3 col-3 col-md-2'>
